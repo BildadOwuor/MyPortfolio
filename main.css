@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Kanit:ital,wght@0,300;0,400;0,600;1,800&family=Shizuru&display=swap');
+* {
+    width: auto;
+    /* font-size: 60px; */
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+}
+/* font-family: 'Anton', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Shizuru', cursive; */
+
+html{
+    border-radius: 30%;
+}
+
+
+#header {
+    color: white;
+    background:radial-gradient(white, black, grey)
+}
+.billy{
+  font-family: 'Kanit', sans-serif;  
+}
+a:visited{
+    color: darkblue;
+}
+a:active{
+    color:aqua;
+}
+.nav-bar {
+    display: flex;
+    flex-direction:row;
+    /* margin-top: 10em; */
+    /*  list-style-type: none; */
+}
+.nav-bar-content{
+    /* color: black; */
+    display:flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: 0%;
+    font-size: large;
+}
+nav li {
+    margin-right: 0%;
+    list-style-type: none;
+    margin: 10px;
+
+}
+
+nav li a {
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.section-one{
+    display:flex;
+    flex-direction: row;
+}
+.section-one a{
+    display: flex;
+    flex-direction: row;
+}
+.article-one{
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.dp{
+    width:250px;
+    height: 300px;
+    border-radius: 10%;
+}
+
+.foot {
+    margin-bottom: 0%;
+    align-items: center;
+    background-color: grey;
+    color: whitesmoke;
+}
+.emailaddress{
+    margin: 5px;
+}
+.myform{
+    background-color: black;
+    /* margin: 10px; */
+    height: 90%;
+    /* border: 10px; */
+    border: 5px;
+}
+.bt1 {
+    border-radius: 60%;
+    width: 30px;
+    height: 10px;
+    margin-bottom: 5px;
+}
+
+.footsent {
+    /* border: 10px; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 0%;
+}
+#date{
+    margin-right: 0%;
+    margin-left: auto;
+}

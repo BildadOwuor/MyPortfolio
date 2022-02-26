@@ -1,0 +1,75 @@
+  <!-- built for those who wish to know Bildad. -->
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <!--  
+[if lt IE 9]> 
+<script src="https://raw.githubusercontent.com/aFarkas/html5shiv/master/dist/html5shiv.min.js"></script>
+ <![endif]-->
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bildad Owuor</title>
+      <link rel="stylesheet" href="./main.css">
+  </head>
+
+  <body>
+      <header id="header">
+          <h1 class="billy">Bildad Owuor</h1>
+          <p><strong>W</strong>elcome <em>to my</em> <strong>page</strong></p>
+          <nav class="nav-bar">
+              <ul class="nav-bar-content">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="#About">About</a></li>
+                  <li><a href="#Blogs">Blogs</a></li>
+              </ul>
+
+          </nav>
+      </header>
+      <!-- About section -->
+      <h1>About</h1>
+      <section class="section-one" id="section-one"><a href="./About.html"> <img src="./photos/IMG_20210901_222314.jpg"
+                  alt="my profile" class="dp" id="dp">
+              <article class="article-one"><b>Hi.</b><br /> My name is Bildad Owuor, an aspiring Software Engineer
+                  currently in an industrial attachment at Herufi Africa </article>
+          </a>
+      </section>
+      <section>
+          <h1>Contact</h1>
+      </section>
+      <!-- blog section -->
+      <h1>Blogs</h1>
+      <section>
+
+      </section>
+      <!-- footer section -->
+      <footer class="foot">
+          <div class="myform" id="myform">
+              <form action="formAction()" method="POST">
+                  <p>Get In Touch</p>
+                  <label for="emailaddress">Email Address:</label><input type="text" value="Email" id="emailaddress"
+                      class="emailaddress" /><br />
+                  <label for="language">Which language would you like to know more about?</label><br />
+                  <select name="langchoice" id="language">
+                      <option value="All">All</option>
+                      <option value="JavaScript">JavaScript</option>
+                      <option value="C#">C#</option>
+                      <option value="Java">Java</option>
+                      <option value="C">C</option>
+                  </select><br />
+                  <input type="button" value="OK" class="btn1" onclick="testMe()">
+
+              </form>
+          </div>
+
+          <h2 class="footsent">
+              &copy;BildadOwuor @ 2022
+              <div id="date"></div>
+          </h2>
+      </footer>
+
+      <script src="./index.js"></script>
+  </body>
+
+  </html>
