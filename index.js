@@ -1,69 +1,122 @@
-function dateFunction() {
-   var timeStamp = new Date();
-   var utcdate = timeStamp.toUTCString();
-   document.getElementById('date').innerHTML = utcdate;
-   // console.log(utcdate);
-}
-dateFunction();
-
-// end of dte function.
-
-// languages function.
+$(document).ready(function () {
 
 
-// const languages=["C","Java","JavaScript","c#"];
-// for (x of names){
-//      return x;
-//  }
-//  document.getElementById('language').innerHTML=x;
-// function onClick() {
-//    let a = document.getElementById('language').innerHTML.valueOf;
-// }
+   "use strict";
 
 
-function responsive() {
-   let a = screen.width,
-      b = screen.availHeight;
-   switch (a) {
-      case a >= 1366:
-         document.getElementsByTagName('body').style.width = '80%';
-         break;
-      case a <= 1920:
-         document.getElementsByTagName('body').style.width = '80%';
-         break;
+   function dateFunction() {
+      var timeStamp = new Date();
+      var utcdate = timeStamp.toLocaleDateString();
+      document.getElementById('date').innerHTML = 'Visited on' + " " + utcdate;
+      // console.log(utcdate);
    }
-}
+   dateFunction();
 
-function testMe() {
-   var textBox = document.getElementById('language');
-   var textValue = textBox.value;
-   var emailAddress = document.getElementById('emailaddress').value;
-   if (textValue == 'All') {
-      return emailAddress + 'All';
-   } else if (textValue == 'JavaScript') {
-      return emailAddress + 'JavaScript';
-   } else if (textValue == 'C#') {
-      return emailAddress + 'C#';
-   } else if (textValue == 'Java') {
-      return emailAddress + 'Java';
-   } else if (textValue == 'C') {
-      return emailAddress + 'C';
-   } else {
-      return emailAddress + 'No Language selected.';
+   // end of date function.
+
+   // getting user input and matching the email with the language selected
+   //2. Error detected. To be asked.
+   let emailAddress = $("#emailaddress").val();
+   let textValue = $("#language").val();
+   var getIntouch = $("#btn1");
+   getIntouch.on("click", function () {
+      var feedBack = new Array([emailAddress, textValue]);
+      console.log(feedBack);
+   });
+
+   var myBlogs = $("#more");
+   // myBlogs.text("Visit www.bildadowuor.co.ke");
+
+   var learnMore = $("#toggleButton");
+   learnMore.on("click", function () {
+      myBlogs.toggle(500);
+
+      if (learnMore.text() == "See Less") learnMore.text("See More");
+      else learnMore.text("See Less");
+   });
+
+
+   // var blogs = "https://medium.com/me/stories/public";
+   // $.get(blogs, function () {
+   //    displayblogs();
+   // });
+   // var viewBlogs=$("#article-three").text(blogs);
+
+
+
+   // var breakdown = $("body").text("Sorry we're updating our site");
+   // breakdown.css("font-weight", "bold");
+   // breakdown.css("margin","25%");
+   // breakdown.css("width","auto");
+   // breakdown.css("height","auto");
+   // breakdown.css("font-size", "20px");
+
+
+   function greetings() {
+      const time = new Date();
+      const current = time.toLocaleTimeString("en-US", {
+         hour: "2-digit",
+         minute: "2-digit",
+         hour12: false
+      });
+      if (current < '12:00') {
+         document.getElementById('greetings').innerHTML = 'Good Morning';
+      } else if ('16:00' > current > '12:00') {
+         document.getElementById('greetings').innerHTML = 'Good Afternoon';
+      } else if ('19:00' > current >= '16:00') {
+         document.getElementById('greetings').innerHTML = 'Good Evening';
+      } else if (current >= '19:00') {
+         document.getElementById('greetings').innerHTML = 'Good Night';
+      } else {
+         document.getElementById('greetings').innerHTML = 'Have a nice Day';
+      }
+
    }
-}
+   greetings();
 
-function getIntouch(emailAddress, textValue) {
-   var feedBack = new Array([emailAddress, textValue]);
-   console.log(feedBack);
-}
+   var heyjquery = $("#test");
+   heyjquery.text("This is jQuery");
 
+   heyjquery.hover(function () {
+      // entering make it white
+      $(this).css("color", "white");
+   }, function () {
+      // for leaving reverse it 
+      $(this).css("color", "black");
+   });
+   // 3. searchResult on the DOM
+   // $("#searchBar").on("submit", function(){
 
-// var person={
-//    Email:"Email",
-//    language:"language",
-//    inTouch: function (){
-//       return this.Email+""+this.language;
-//    }
-// }
-// console.log(inTouch);
+   // var search =$(document);
+   // $.get(search)
+   // .success(function(r){
+   //    displayResult();
+   // });
+   // .fail(function (_err){
+   //    console.log("Failed to query DOM");
+   // });
+   // .done(function(){
+
+   // });
+   // return false;
+   // });
+
+   // var search = $("#search").val();
+   // var searcher = $("#searchIcon");
+   // searcher.on("click", function () {
+   //    search.display();
+   // });
+
+   // var searchResult = $(document).text();
+   // $.each(searchResult, function () {
+   //    var newResult = $(search);
+
+   //    searchResult.append(newResult);
+   // });
+   
+
+});
+
+// TO ASK
+
+// 1. using search button to search information from the DOM elements?

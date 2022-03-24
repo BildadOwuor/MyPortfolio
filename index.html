@@ -11,65 +11,104 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Bildad Owuor</title>
-      <link rel="stylesheet" href="./main.css">
+      <link rel="stylesheet" href="./main.css" />
+      <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
   </head>
 
   <body>
       <header id="header">
           <h1 class="billy">Bildad Owuor</h1>
-          <p><strong>W</strong>elcome <em>to my</em> <strong>page</strong></p>
+          <div class="welcome-note">
+              <p id="greetings" class="greetings"></p>
+          </div>
           <nav class="nav-bar">
               <ul class="nav-bar-content">
+                  <li class="searchBar" id="searchBar"><input type="text" value="" class="btn3" id="search"><i class="fa-solid fa-magnifying-glass searchIcon" id="searchIcon"></i></li>
                   <li><a href="./index.html">Home</a></li>
-                  <li><a href="#About">About</a></li>
+                  <li><a href="./About.html">About</a></li>
                   <li><a href="#Blogs">Blogs</a></li>
+                  <i class="fa-solid fa-bars Home" id="Home"></i>
               </ul>
-
           </nav>
       </header>
-      <!-- About section -->
-      <h1>About</h1>
-      <section class="section-one" id="section-one"><a href="./About.html"> <img src="./photos/IMG_20210901_222314.jpg"
-                  alt="my profile" class="dp" id="dp">
+      <main class="main-body">
+          <!-- About section -->
+          <section class="section-one" id="section-one">
+              <h1>MISSION</h1>
+              <aside><img src="./photos/IMG_20210901_222314.jpg" alt="logo" class="dp"></aside>
               <article class="article-one"><b>Hi.</b><br /> My name is Bildad Owuor, an aspiring Software Engineer
-                  currently in an industrial attachment at Herufi Africa </article>
-          </a>
-      </section>
-      <section>
-          <h1>Contact</h1>
-      </section>
-      <!-- blog section -->
-      <h1>Blogs</h1>
-      <section>
+                  currently in an <i>industrial attachment</i> at <a href="https://www.herufi.co.ke/" target="_blank">
+                      <b>Herufi
+                          Africa.</b></a>
+                  <br> My main goal is to be an all round software Engineer and use my skills to help solve real life
+                  problems.
+                  <h1>VISSION</h1>
+              </article>
 
-      </section>
+          </section>
+          <section class="section-two">
+              <h1>Contact</h1>
+              <article class="article-two">
+                  <ul>
+                      <li><a href="https://twitter.com/Bildad0" target="_blank">&#9745;Twitter</a></li>
+                      <li>&#9745;+254700524820</li>
+                      <li><a href="https://github.com/BildadOwuor" target="_blank">&#9745;GitHub</a></li>
+                      <li>&#9745;Email:<a href="https://bildadowuor@outlook.com"
+                              target="_blank">Bildadowuor@outlook.com</a>
+                      </li>
+                      <li id="test"></li>
+                  </ul>
+              </article>
+          </section>
+          <!-- blog section -->
+          <section class="section-three">
+              <h1>Blogs</h1>
+              <article class="article-three" id="article-three">
+                  <iframe
+                      src="https://owbildard.medium.com/mistakes-new-entrepreneurs-make-and-how-to-avoid-them-e70fe713bfba"
+                      width="100%" height="25%">
+                  </iframe>
+                  <iframe src="https://owbildard.medium.com/how-to-become-a-great-programmer-c7e44b8ad5fd" width="100%"
+                      height="25%"></iframe>
+                  <iframe id="more"
+                      src="https://owbildard.medium.com/types-of-customers-you-will-meet-in-your-business-and-how-to-handle-them-9125d7ad45a5"
+                      width="100%" height="25%">
+                  </iframe>
+
+              </article>
+              <button id="toggleButton" class="btn2">See Less</button>
+          </section>
+
+      </main>
+
       <!-- footer section -->
       <footer class="foot">
           <div class="myform" id="myform">
-              <form action="formAction()" method="POST">
-                  <p>Get In Touch</p>
-                  <label for="emailaddress">Email Address:</label><input type="text" value="Email" id="emailaddress"
+              <form action="" method="POST" class="form1">
+                  <p class="intouch">Get In Touch</p>
+                  <label for="emailaddress">Email Address:</label><input type="text" id="emailaddress"
                       class="emailaddress" /><br />
                   <label for="language">Which language would you like to know more about?</label><br />
-                  <select name="langchoice" id="language">
+                  <select name="langchoice" id="language" class="lang">
                       <option value="All">All</option>
                       <option value="JavaScript">JavaScript</option>
                       <option value="C#">C#</option>
                       <option value="Java">Java</option>
                       <option value="C">C</option>
                   </select><br />
-                  <input type="button" value="OK" class="btn1" onclick="testMe()">
+                  <input type="button" value="OK" id="btn1" class="btn1">
 
               </form>
           </div>
 
           <h2 class="footsent">
-              &copy;BildadOwuor @ 2022
+              &copy;2022Bildad.
               <div id="date"></div>
           </h2>
       </footer>
-
+      <script src="./jquery.min.js"></script>
       <script src="./index.js"></script>
+      <script src="./fontawesome-free-6.0.0-web/js/all.js"></script>
   </body>
 
   </html>
